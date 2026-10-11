@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "SuperFrenPet",
+    "name": "Super Fren Pet",
+    "symbol": "SFP",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 7500,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0x612a9bb008e16ef2d24f41dae9fc661831d93367"
+  },
+  "notes": "SuperFrenPet is an ERC-20 token named Super Fren Pet (SFP) with 18 decimals. Its no-argument constructor mints the entire fixed supply of 1,000,000,000 SFP once to msg.sender, which is the factory during launch. Transfers have no token tax or burn. There are no external mint, burn, or administrative functions and no application contracts. pool.initialPrice records provenance only; the deployer derives the opening price from economics.initialMarketCapWei and token.totalSupply."
+}
